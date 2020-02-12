@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB6EB72723F3E25E00C9EACA /* CoolCraigSurveyFinal WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AB6EB72623F3E25E00C9EACA /* CoolCraigSurveyFinal WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AB6EB72D23F3E25E00C9EACA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6EB72B23F3E25E00C9EACA /* Interface.storyboard */; };
+		AB6EB72F23F3E25F00C9EACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB6EB72E23F3E25F00C9EACA /* Assets.xcassets */; };
+		AB6EB73623F3E25F00C9EACA /* CoolCraigSurveyFinal WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB6EB73523F3E25F00C9EACA /* CoolCraigSurveyFinal WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AB6EB73B23F3E25F00C9EACA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EB73A23F3E25F00C9EACA /* InterfaceController.swift */; };
+		AB6EB73D23F3E25F00C9EACA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EB73C23F3E25F00C9EACA /* ExtensionDelegate.swift */; };
+		AB6EB73F23F3E25F00C9EACA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EB73E23F3E25F00C9EACA /* NotificationController.swift */; };
+		AB6EB74123F3E26000C9EACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB6EB74023F3E26000C9EACA /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB6EB72823F3E25E00C9EACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB6EB71C23F3E25E00C9EACA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB6EB72523F3E25E00C9EACA;
+			remoteInfo = "CoolCraigSurveyFinal WatchKit App";
+		};
+		AB6EB73723F3E25F00C9EACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB6EB71C23F3E25E00C9EACA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB6EB73423F3E25F00C9EACA;
+			remoteInfo = "CoolCraigSurveyFinal WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB6EB74923F3E26000C9EACA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AB6EB73623F3E25F00C9EACA /* CoolCraigSurveyFinal WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB6EB74D23F3E26000C9EACA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AB6EB72723F3E25E00C9EACA /* CoolCraigSurveyFinal WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AB6EB72223F3E25E00C9EACA /* CoolCraigSurveyFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolCraigSurveyFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB6EB72623F3E25E00C9EACA /* CoolCraigSurveyFinal WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoolCraigSurveyFinal WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB6EB72C23F3E25E00C9EACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		AB6EB72E23F3E25F00C9EACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB6EB73023F3E25F00C9EACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB6EB73523F3E25F00C9EACA /* CoolCraigSurveyFinal WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CoolCraigSurveyFinal WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB6EB73A23F3E25F00C9EACA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		AB6EB73C23F3E25F00C9EACA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		AB6EB73E23F3E25F00C9EACA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		AB6EB74023F3E26000C9EACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB6EB74223F3E26000C9EACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB6EB74323F3E26000C9EACA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB6EB73223F3E25F00C9EACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB6EB71B23F3E25E00C9EACA = {
+			isa = PBXGroup;
+			children = (
+				AB6EB72A23F3E25E00C9EACA /* CoolCraigSurveyFinal WatchKit App */,
+				AB6EB73923F3E25F00C9EACA /* CoolCraigSurveyFinal WatchKit Extension */,
+				AB6EB72323F3E25E00C9EACA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB6EB72323F3E25E00C9EACA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB6EB72223F3E25E00C9EACA /* CoolCraigSurveyFinal.app */,
+				AB6EB72623F3E25E00C9EACA /* CoolCraigSurveyFinal WatchKit App.app */,
+				AB6EB73523F3E25F00C9EACA /* CoolCraigSurveyFinal WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB6EB72A23F3E25E00C9EACA /* CoolCraigSurveyFinal WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				AB6EB72B23F3E25E00C9EACA /* Interface.storyboard */,
+				AB6EB72E23F3E25F00C9EACA /* Assets.xcassets */,
+				AB6EB73023F3E25F00C9EACA /* Info.plist */,
+			);
+			path = "CoolCraigSurveyFinal WatchKit App";
+			sourceTree = "<group>";
+		};
+		AB6EB73923F3E25F00C9EACA /* CoolCraigSurveyFinal WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AB6EB73A23F3E25F00C9EACA /* InterfaceController.swift */,
+				AB6EB73C23F3E25F00C9EACA /* ExtensionDelegate.swift */,
+				AB6EB73E23F3E25F00C9EACA /* NotificationController.swift */,
+				AB6EB74023F3E26000C9EACA /* Assets.xcassets */,
+				AB6EB74223F3E26000C9EACA /* Info.plist */,
+				AB6EB74323F3E26000C9EACA /* PushNotificationPayload.apns */,
+			);
+			path = "CoolCraigSurveyFinal WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB6EB72123F3E25E00C9EACA /* CoolCraigSurveyFinal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB6EB74E23F3E26000C9EACA /* Build configuration list for PBXNativeTarget "CoolCraigSurveyFinal" */;
+			buildPhases = (
+				AB6EB72023F3E25E00C9EACA /* Resources */,
+				AB6EB74D23F3E26000C9EACA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB6EB72923F3E25E00C9EACA /* PBXTargetDependency */,
+			);
+			name = CoolCraigSurveyFinal;
+			productName = CoolCraigSurveyFinal;
+			productReference = AB6EB72223F3E25E00C9EACA /* CoolCraigSurveyFinal.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		AB6EB72523F3E25E00C9EACA /* CoolCraigSurveyFinal WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB6EB74A23F3E26000C9EACA /* Build configuration list for PBXNativeTarget "CoolCraigSurveyFinal WatchKit App" */;
+			buildPhases = (
+				AB6EB72423F3E25E00C9EACA /* Resources */,
+				AB6EB74923F3E26000C9EACA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB6EB73823F3E25F00C9EACA /* PBXTargetDependency */,
+			);
+			name = "CoolCraigSurveyFinal WatchKit App";
+			productName = "CoolCraigSurveyFinal WatchKit App";
+			productReference = AB6EB72623F3E25E00C9EACA /* CoolCraigSurveyFinal WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AB6EB73423F3E25F00C9EACA /* CoolCraigSurveyFinal WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB6EB74623F3E26000C9EACA /* Build configuration list for PBXNativeTarget "CoolCraigSurveyFinal WatchKit Extension" */;
+			buildPhases = (
+				AB6EB73123F3E25F00C9EACA /* Sources */,
+				AB6EB73223F3E25F00C9EACA /* Frameworks */,
+				AB6EB73323F3E25F00C9EACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoolCraigSurveyFinal WatchKit Extension";
+			productName = "CoolCraigSurveyFinal WatchKit Extension";
+			productReference = AB6EB73523F3E25F00C9EACA /* CoolCraigSurveyFinal WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB6EB71C23F3E25E00C9EACA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Agnes Jang";
+				TargetAttributes = {
+					AB6EB72123F3E25E00C9EACA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					AB6EB72523F3E25E00C9EACA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					AB6EB73423F3E25F00C9EACA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AB6EB71F23F3E25E00C9EACA /* Build configuration list for PBXProject "CoolCraigSurveyFinal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB6EB71B23F3E25E00C9EACA;
+			productRefGroup = AB6EB72323F3E25E00C9EACA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB6EB72123F3E25E00C9EACA /* CoolCraigSurveyFinal */,
+				AB6EB72523F3E25E00C9EACA /* CoolCraigSurveyFinal WatchKit App */,
+				AB6EB73423F3E25F00C9EACA /* CoolCraigSurveyFinal WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB6EB72023F3E25E00C9EACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB6EB72423F3E25E00C9EACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB6EB72F23F3E25F00C9EACA /* Assets.xcassets in Resources */,
+				AB6EB72D23F3E25E00C9EACA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB6EB73323F3E25F00C9EACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB6EB74123F3E26000C9EACA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB6EB73123F3E25F00C9EACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB6EB73F23F3E25F00C9EACA /* NotificationController.swift in Sources */,
+				AB6EB73D23F3E25F00C9EACA /* ExtensionDelegate.swift in Sources */,
+				AB6EB73B23F3E25F00C9EACA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB6EB72923F3E25E00C9EACA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB6EB72523F3E25E00C9EACA /* CoolCraigSurveyFinal WatchKit App */;
+			targetProxy = AB6EB72823F3E25E00C9EACA /* PBXContainerItemProxy */;
+		};
+		AB6EB73823F3E25F00C9EACA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB6EB73423F3E25F00C9EACA /* CoolCraigSurveyFinal WatchKit Extension */;
+			targetProxy = AB6EB73723F3E25F00C9EACA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB6EB72B23F3E25E00C9EACA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB6EB72C23F3E25E00C9EACA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB6EB74423F3E26000C9EACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB6EB74523F3E26000C9EACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB6EB74723F3E26000C9EACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7434BPWFN7;
+				INFOPLIST_FILE = "CoolCraigSurveyFinal WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aj.CoolCraigSurveyFinal.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		AB6EB74823F3E26000C9EACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7434BPWFN7;
+				INFOPLIST_FILE = "CoolCraigSurveyFinal WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aj.CoolCraigSurveyFinal.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		AB6EB74B23F3E26000C9EACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7434BPWFN7;
+				IBSC_MODULE = CoolCraigSurveyFinal_WatchKit_Extension;
+				INFOPLIST_FILE = "CoolCraigSurveyFinal WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = aj.CoolCraigSurveyFinal.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		AB6EB74C23F3E26000C9EACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7434BPWFN7;
+				IBSC_MODULE = CoolCraigSurveyFinal_WatchKit_Extension;
+				INFOPLIST_FILE = "CoolCraigSurveyFinal WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = aj.CoolCraigSurveyFinal.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		AB6EB74F23F3E26000C9EACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7434BPWFN7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aj.CoolCraigSurveyFinal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AB6EB75023F3E26000C9EACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7434BPWFN7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aj.CoolCraigSurveyFinal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB6EB71F23F3E25E00C9EACA /* Build configuration list for PBXProject "CoolCraigSurveyFinal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB6EB74423F3E26000C9EACA /* Debug */,
+				AB6EB74523F3E26000C9EACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB6EB74623F3E26000C9EACA /* Build configuration list for PBXNativeTarget "CoolCraigSurveyFinal WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB6EB74723F3E26000C9EACA /* Debug */,
+				AB6EB74823F3E26000C9EACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB6EB74A23F3E26000C9EACA /* Build configuration list for PBXNativeTarget "CoolCraigSurveyFinal WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB6EB74B23F3E26000C9EACA /* Debug */,
+				AB6EB74C23F3E26000C9EACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB6EB74E23F3E26000C9EACA /* Build configuration list for PBXNativeTarget "CoolCraigSurveyFinal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB6EB74F23F3E26000C9EACA /* Debug */,
+				AB6EB75023F3E26000C9EACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB6EB71C23F3E25E00C9EACA /* Project object */;
+}
