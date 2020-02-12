@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Hxw-te-13x">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CoolCraigSurveyFinal_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="427" y="28"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="427" y="326"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="CoolCraigSurveyFinal_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="326"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="CoolCraigSurveyFinal_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="28"/>
+        </scene>
+        <!--LoginInterfaceController-->
+        <scene sceneID="JCK-lf-8NS">
+            <objects>
+                <controller identifier="LoginInterfaceController" id="plb-iU-Z7I" customClass="LoginInterfaceController" customModule="CoolCraigSurveyFinal_WatchKit_Extension">
+                    <items>
+                        <textField width="1" alignment="left" text="Email" id="x1r-CP-UdL">
+                            <connections>
+                                <action selector="onEmailTextInput:" destination="plb-iU-Z7I" id="qvo-UV-kzH"/>
+                            </connections>
+                        </textField>
+                        <textField width="1" alignment="left" text="Password" id="xeK-Uj-Tm6">
+                            <connections>
+                                <action selector="onPasswordTextInput:" destination="plb-iU-Z7I" id="SPb-u8-nup"/>
+                            </connections>
+                        </textField>
+                        <button width="1" alignment="left" title="Login" id="7o9-se-0vw">
+                            <color key="backgroundColor" red="0.20532343380000001" green="0.37911150069999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="onSignInButtonClick" destination="plb-iU-Z7I" id="UoW-ML-Xel"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="emailTextField" destination="x1r-CP-UdL" id="qBn-UF-7CZ"/>
+                        <outlet property="passwordTextField" destination="xeK-Uj-Tm6" id="Stn-tB-9sI"/>
+                        <outlet property="signInButton" destination="7o9-se-0vw" id="4cL-px-18D"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-89" y="864"/>
+        </scene>
+        <!--WelcomeInterfaceController-->
+        <scene sceneID="yHd-dj-iSr">
+            <objects>
+                <controller identifier="WelcomeInterfaceController" id="LkX-qS-Izo" customClass="WelcomeInterfaceController" customModule="CoolCraigSurveyFinal_WatchKit_Extension">
+                    <items>
+                        <label width="133" height="81" alignment="center" text="CoolCraig Survey" textAlignment="center" baselineAdjustment="alignCenters" id="73q-ub-Iev"/>
+                        <label width="136" height="44" alignment="center" text="You're all logged in!" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="2" id="Lh8-78-fM7"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="230" y="885"/>
+        </scene>
+        <!--Entrypoint Interface Controller-->
+        <scene sceneID="e9l-mo-ORr">
+            <objects>
+                <controller id="Hxw-te-13x" customClass="EntrypointInterfaceController" customModule="CoolCraigSurveyFinal_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Loading..." textAlignment="center" baselineAdjustment="alignCenters" id="AR3-Hd-tuq"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="54" y="1156"/>
+        </scene>
+    </scenes>
+</document>
