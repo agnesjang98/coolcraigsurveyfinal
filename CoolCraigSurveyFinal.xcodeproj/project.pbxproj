@@ -15,6 +15,11 @@
 		AB6EB73D23F3E25F00C9EACA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EB73C23F3E25F00C9EACA /* ExtensionDelegate.swift */; };
 		AB6EB73F23F3E25F00C9EACA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EB73E23F3E25F00C9EACA /* NotificationController.swift */; };
 		AB6EB74123F3E26000C9EACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB6EB74023F3E26000C9EACA /* Assets.xcassets */; };
+		AB6EB75223F3E28700C9EACA /* EntrypointInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EB75123F3E28700C9EACA /* EntrypointInterfaceController.swift */; };
+		AB6EB75423F3E29800C9EACA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EB75323F3E29800C9EACA /* Utils.swift */; };
+		AB6EB75623F3E2AA00C9EACA /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EB75523F3E2AA00C9EACA /* Configuration.swift */; };
+		AB6EB75823F3E2CE00C9EACA /* WelcomeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EB75723F3E2CD00C9EACA /* WelcomeInterfaceController.swift */; };
+		AB6EB75A23F3E2DF00C9EACA /* LoginInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EB75923F3E2DF00C9EACA /* LoginInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +77,12 @@
 		AB6EB74023F3E26000C9EACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB6EB74223F3E26000C9EACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB6EB74323F3E26000C9EACA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		AB6EB75123F3E28700C9EACA /* EntrypointInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrypointInterfaceController.swift; sourceTree = "<group>"; };
+		AB6EB75323F3E29800C9EACA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		AB6EB75523F3E2AA00C9EACA /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		AB6EB75723F3E2CD00C9EACA /* WelcomeInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeInterfaceController.swift; sourceTree = "<group>"; };
+		AB6EB75923F3E2DF00C9EACA /* LoginInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInterfaceController.swift; sourceTree = "<group>"; };
+		AB6EB75B23F3E30000C9EACA /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +121,7 @@
 				AB6EB72B23F3E25E00C9EACA /* Interface.storyboard */,
 				AB6EB72E23F3E25F00C9EACA /* Assets.xcassets */,
 				AB6EB73023F3E25F00C9EACA /* Info.plist */,
+				AB6EB75B23F3E30000C9EACA /* Config.xcconfig */,
 			);
 			path = "CoolCraigSurveyFinal WatchKit App";
 			sourceTree = "<group>";
@@ -119,10 +131,15 @@
 			children = (
 				AB6EB73A23F3E25F00C9EACA /* InterfaceController.swift */,
 				AB6EB73C23F3E25F00C9EACA /* ExtensionDelegate.swift */,
+				AB6EB75323F3E29800C9EACA /* Utils.swift */,
+				AB6EB75523F3E2AA00C9EACA /* Configuration.swift */,
 				AB6EB73E23F3E25F00C9EACA /* NotificationController.swift */,
 				AB6EB74023F3E26000C9EACA /* Assets.xcassets */,
 				AB6EB74223F3E26000C9EACA /* Info.plist */,
 				AB6EB74323F3E26000C9EACA /* PushNotificationPayload.apns */,
+				AB6EB75723F3E2CD00C9EACA /* WelcomeInterfaceController.swift */,
+				AB6EB75923F3E2DF00C9EACA /* LoginInterfaceController.swift */,
+				AB6EB75123F3E28700C9EACA /* EntrypointInterfaceController.swift */,
 			);
 			path = "CoolCraigSurveyFinal WatchKit Extension";
 			sourceTree = "<group>";
@@ -254,9 +271,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB6EB75623F3E2AA00C9EACA /* Configuration.swift in Sources */,
+				AB6EB75423F3E29800C9EACA /* Utils.swift in Sources */,
 				AB6EB73F23F3E25F00C9EACA /* NotificationController.swift in Sources */,
 				AB6EB73D23F3E25F00C9EACA /* ExtensionDelegate.swift in Sources */,
 				AB6EB73B23F3E25F00C9EACA /* InterfaceController.swift in Sources */,
+				AB6EB75823F3E2CE00C9EACA /* WelcomeInterfaceController.swift in Sources */,
+				AB6EB75223F3E28700C9EACA /* EntrypointInterfaceController.swift in Sources */,
+				AB6EB75A23F3E2DF00C9EACA /* LoginInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +311,7 @@
 /* Begin XCBuildConfiguration section */
 		AB6EB74423F3E26000C9EACA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB6EB75B23F3E30000C9EACA /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -348,6 +371,7 @@
 		};
 		AB6EB74523F3E26000C9EACA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB6EB75B23F3E30000C9EACA /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -401,6 +425,7 @@
 		};
 		AB6EB74723F3E26000C9EACA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB6EB75B23F3E30000C9EACA /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -423,6 +448,7 @@
 		};
 		AB6EB74823F3E26000C9EACA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB6EB75B23F3E30000C9EACA /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +471,7 @@
 		};
 		AB6EB74B23F3E26000C9EACA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB6EB75B23F3E30000C9EACA /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -464,6 +491,7 @@
 		};
 		AB6EB74C23F3E26000C9EACA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB6EB75B23F3E30000C9EACA /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -483,6 +511,7 @@
 		};
 		AB6EB74F23F3E26000C9EACA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB6EB75B23F3E30000C9EACA /* Config.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -496,6 +525,7 @@
 		};
 		AB6EB75023F3E26000C9EACA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB6EB75B23F3E30000C9EACA /* Config.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  CoolCraigSurveyV2
+//
+//  Created by Agnes Jang on 1/28/20.
+//  Copyright © 2020 Agnes Jang. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+FIREBASE_API_KEY=AIzaSyCne2-i2ymL8S9rFDJhpdKzzYTCsreFkU0
