@@ -24,9 +24,13 @@ class LoginInterfaceController: WKInterfaceController {
         
         if let url = URL(string: "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=\(Environment.FIREBASE_API_KEY)") {
             print(url)
+            print(email)
+            print(password)
             let json: [String:Any] = [
                 "email": email,
                 "password": password,
+//                "email": "test@test.com",
+//                "password": "password",
                 "returnSecureToken": true
             ]
             let jsonData = try? JSONSerialization.data(withJSONObject: json)
@@ -79,11 +83,11 @@ class LoginInterfaceController: WKInterfaceController {
     }
     
     @IBAction func onEmailTextInput(_ value: NSString?) {
-        email = (value == nil) ? "" : "\(value)"
+        email = (value == nil) ? "" : "\(value)" as String
     }
     
     @IBAction func onPasswordTextInput(_ value: NSString?) {
-        password = (value == nil) ? "" : "\(value)"
+        password = (value == nil) ? "" : "\(value)" as String
     }
     
     @IBAction func onSignInButtonClick() {

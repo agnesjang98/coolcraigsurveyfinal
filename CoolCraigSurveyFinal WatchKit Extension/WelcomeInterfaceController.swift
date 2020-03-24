@@ -29,81 +29,81 @@ class WelcomeInterfaceController: WKInterfaceController, UNUserNotificationCente
 //        scheduleLocal()
     }
     
-    func fetchTimes(){
-        if let url = URL(string: "https://firestore.googleapis.com/v1/projects/coolcraig-bdd39/databases/(default)/documents/notification_times") {
-                    
-                    var request = URLRequest(url: url)
-                    request.httpMethod = "GET"
-                    request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
-                    URLSession.shared.dataTask(with: request) { data, response, error in
+        func fetchTimes(){
+            print("got here fetchTimes")
+            if let url = URL(string: "https://firestore.googleapis.com/v1/projects/coolcraig-ff44a/databases/(default)/documents/notification_times") {
+                        
+                        var request = URLRequest(url: url)
+                        request.httpMethod = "GET"
+                        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+                        URLSession.shared.dataTask(with: request) { data, response, error in
 
-                        var success: Bool = false
+                            var success: Bool = false
 
-                        if let data = data {
-                            let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
-//                            print(responseJSON)
-                            if let responseJSON = responseJSON as? [String: Any] {
-                                if responseJSON["error"] == nil {
-                                    success = true
-                                }
-                                if let documents = responseJSON["documents"] as? Array<Any> {
-                                    print("documents")
-                                    print(documents)
-                                    if let fieldsList = documents[0] as? [String: Any] {
-                                        print("fields")
-                                        print(fieldsList["fields"])
-                                        if let times = fieldsList["fields"] as? [String: [String: Any]]{
-                                            print("times")
-                                            print(times)
-                                            for (key, value) in times{
-                                                print(key)
-                                                print(value["integerValue"])
-                                                if key == "morning_time" {
-                                                    if let time = value["integerValue"] as? String {
-                                                        print("got here 1")
-                                                        self.morningTime = Int(time) ?? 9
-                                                        print(self.morningTime)
+                            if let data = data {
+                                let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+    //                            print(responseJSON)
+                                if let responseJSON = responseJSON as? [String: Any] {
+                                    if responseJSON["error"] == nil {
+                                        success = true
+                                    }
+                                    if let documents = responseJSON["documents"] as? Array<Any> {
+                                        print("documents")
+                                        print(documents)
+                                        if let fieldsList = documents[0] as? [String: Any] {
+                                            print("fields")
+                                            print(fieldsList["fields"])
+                                            if let times = fieldsList["fields"] as? [String: [String: Any]]{
+                                                print("times")
+                                                print(times)
+                                                for (key, value) in times{
+                                                    print(key)
+                                                    print(value["integerValue"])
+                                                    if key == "morning_time" {
+                                                        if let time = value["integerValue"] as? String {
+                                                            print("got here 1")
+                                                            self.morningTime = Int(time) ?? 9
+                                                            print(self.morningTime)
+                                                        }
                                                     }
-                                                }
-                                                else if key == "noon_time" {
-                                                    if let time = value["integerValue"] as? String {
-                                                        print("got here 2")
-                                                        self.noonTime = Int(time) ?? 12
-                                                        print(self.noonTime)
+                                                    else if key == "noon_time" {
+                                                        if let time = value["integerValue"] as? String {
+                                                            print("got here 2")
+                                                            self.noonTime = Int(time) ?? 12
+                                                            print(self.noonTime)
+                                                        }
                                                     }
-                                                }
-                                                else if key == "latenoon_time" {
-                                                    if let time = value["integerValue"] as? String {
-                                                        print("got here 3")
-                                                        self.latenoonTime = Int(time) ?? 15
-                                                        print(self.latenoonTime)
+                                                    else if key == "latenoon_time" {
+                                                        if let time = value["integerValue"] as? String {
+                                                            print("got here 3")
+                                                            self.latenoonTime = Int(time) ?? 15
+                                                            print(self.latenoonTime)
+                                                        }
                                                     }
+    //                                                print(value["integerValue"])
+    //                                                if let time = value as? [String: Any] {
+    //                                                    print(time)
+    //                                                }
                                                 }
-//                                                print(value["integerValue"])
-//                                                if let time = value as? [String: Any] {
-//                                                    print(time)
-//                                                }
                                             }
                                         }
                                     }
                                 }
+                                self.scheduleLocal()
+                            } else {
+                                print(error as! String)
                             }
-                            self.scheduleLocal()
-                        } else {
-                            print(error as! String)
-                        }
 
-                        DispatchQueue.main.async {
-                            if(success) {
-                                self.pop()
+                            DispatchQueue.main.async {
+                                if(success) {
+                                    self.pop()
+                                }
                             }
-                        }
 
-                    }.resume()
-            
+                        }.resume()
+                
+            }
         }
-    }
-        
     @objc func registerLocal() {
         print("called register")
         let center = UNUserNotificationCenter.current()
@@ -207,7 +207,7 @@ class WelcomeInterfaceController: WKInterfaceController, UNUserNotificationCente
         
         print("\(NSDate().timeIntervalSince1970 * 1000)");
         
-        if let url = URL(string: "https://firestore.googleapis.com/v1/projects/coolcraig-bdd39/databases/(default)/documents/survey_responses") {
+        if let url = URL(string: "https://firestore.googleapis.com/v1/projects/coolcraig-ff44a/databases/(default)/documents/survey_responses") {
             let json: [String:Any] = [
                 "user_id": Utils.getKey(key: "userId"),
                 "fields": [
