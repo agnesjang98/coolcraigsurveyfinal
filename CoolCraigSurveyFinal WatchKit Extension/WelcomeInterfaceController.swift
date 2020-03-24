@@ -49,6 +49,7 @@ class WelcomeInterfaceController: WKInterfaceController, UNUserNotificationCente
                                 if let documents = responseJSON["documents"] as? Array<Any> {
                                     print("documents")
                                     print(documents)
+                                    
                                     if let fieldsList = documents[0] as? [String: Any] {
                                         print("fields")
                                         print(fieldsList["fields"])
