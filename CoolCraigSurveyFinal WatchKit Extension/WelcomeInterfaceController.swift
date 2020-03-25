@@ -209,7 +209,7 @@ class WelcomeInterfaceController: WKInterfaceController, UNUserNotificationCente
         
         if let url = URL(string: "https://firestore.googleapis.com/v1/projects/coolcraig-ff44a/databases/(default)/documents/survey_responses") {
             let json: [String:Any] = [
-                "user_id": Utils.getKey(key: "userId"),
+                
                 "fields": [
                     "result": [
                         "stringValue": response
@@ -219,6 +219,9 @@ class WelcomeInterfaceController: WKInterfaceController, UNUserNotificationCente
                     ],
                     "email": [
                         "stringValue": Utils.getKey(key: "userEmail")
+                    ],
+                    "user_id": [
+                        "stringValue": Utils.getKey(key: "userId")
                     ]
                 ]
                 
